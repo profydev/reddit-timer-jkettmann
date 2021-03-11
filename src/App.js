@@ -1,10 +1,16 @@
 import React from 'react';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import { Normalize } from 'styled-normalize';
 
 function App() {
   return (
-    <div>
-      App Placeholder
-    </div>
+    <Router>
+      <Normalize />
+      <Switch>
+        <Route path="/search">Search</Route>
+        <Route path="/">Home</Route>
+      </Switch>
+    </Router>
   );
 }
 
