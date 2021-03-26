@@ -17,7 +17,7 @@ describeOnBranches('header')('Header', () => {
     cy.url().should('equal', `${Cypress.config().baseUrl}/`);
   });
 
-  it('Contains "Search" link', () => {
+  it('Contains "Search" link that includes the default subreddit "javascript"', () => {
     cy.get('header')
       .contains('Search')
       .click();

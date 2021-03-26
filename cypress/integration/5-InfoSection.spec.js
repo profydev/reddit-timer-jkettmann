@@ -5,16 +5,16 @@ describeOnBranches('info-section')('Info Section', () => {
     cy.visit('/');
   });
 
-  it('Contains links to ooloo.io and ooloo.io/employers', () => {
+  it('Contains links to profy.dev and profy.dev/employers', () => {
     cy.contains(/This app was created during a course/)
-      .contains('ooloo.io')
+      .contains('profy.dev')
       .and('have.attr', 'href')
-      .and('eq', 'https://ooloo.io');
+      .and('eq', 'https://profy.dev');
 
     cy.contains(/This app was created during a course/)
       .contains(/Click here for more information/)
       .and('have.attr', 'href')
-      .and('eq', 'https://ooloo.io/employers');
+      .and('eq', 'https://profy.dev/employers');
   });
 
   it('Scrolls to "How it works" when clicking link in header', () => {

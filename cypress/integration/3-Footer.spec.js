@@ -9,12 +9,12 @@ describeOnBranches('footer')('Footer', () => {
     cy.get('footer');
   });
 
-  it('Contains link to ooloo.io/employers', () => {
+  it('Contains link to profy.dev/employers', () => {
     cy
       .get('footer')
-      .contains('ooloo.io')
+      .contains('profy.dev')
       .and('have.attr', 'href')
-      .and('eq', 'https://ooloo.io/employers');
+      .and('eq', 'https://profy.dev/employers');
   });
 
   it('Contains "Terms & Privacy" link', () => {
